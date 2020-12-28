@@ -1,8 +1,10 @@
-import { createApp } from "vue";
-import App from "./App.vue";
+import buildApp from './app';
 import "./registerServiceWorker";
-import router from "./router";
 
-createApp(App)
-  .use(router)
-  .mount("#app");
+const { app, router } = buildApp();
+
+(async (r, a) => {
+   await r.isReady();
+
+   a.mount('#app', true);
+})(router, app);
