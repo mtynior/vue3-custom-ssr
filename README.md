@@ -1,4 +1,4 @@
-# geonosis
+# Simple SSR Vue 3 app with routing and PWA
 
 ## Project setup
 ```
@@ -10,9 +10,19 @@ yarn install
 yarn serve
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies client for production
 ```
 yarn build
+```
+
+### Compiles and minifies client and server for production
+```
+yarn build:all
+```
+
+### Run server
+```
+yarn start
 ```
 
 ### Run your unit tests
